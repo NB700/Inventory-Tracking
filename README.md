@@ -82,7 +82,7 @@ Sample data is only added when both the parts list and products list are empty.
 Existing inventory records are preserved, preventing sample data from overwriting previously stored information.
 
 ### 7. Database Persistence
-The application uses persistent storage to retain inventory information.
+The application uses Spring Data JPA for data persistence, ensuring inventory information is stored and retained.
 
 The persistence configuration includes a customized storage filename to distinguish the application data from the original project configuration.
 
@@ -102,7 +102,10 @@ The sample inventory represents common computer hardware components and computer
 - Access to the GitHub repository.
 
 ### Installation Instructions
-- Clone the GitHub repository: "git clone <github-repository-url>"
+- Clone the GitHub repository:
+```
+git clone https://github.com/NB700/Inventory-Tracking
+```
 - Open IntelliJ IDEA.
 - Select **File → Open** and locate the cloned project directory.
 - Allow IntelliJ IDEA to import the Maven project and download the required dependencies.
